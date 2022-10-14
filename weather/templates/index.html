@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h3>Введите название города и нажмите кнопку</h3>
+</div>
+<form action="" method="post">
+    {% csrf_token %}
+    <div>
+        <label for="city">В каком городе вы хотите узнать погоду?</label>
+        <input name="city" id="city" value="Samara">
+    </div>
+    <div>
+    <div>
+        <button>Получить погоду</button>
+    </div>
+</form>
+</body>
+</html>
